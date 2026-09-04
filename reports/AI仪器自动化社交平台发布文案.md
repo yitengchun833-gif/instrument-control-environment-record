@@ -104,28 +104,10 @@ AI 负责理解手册、修改代码、分析日志和生成报告，真正的�
 
 ---
 
-## 实测配图
+## 发布配图
 
-![封面：一个人也能搭起 AI 自动化测试生态](../assets/social-cards/01-cover.png)
+![AI 多仪器测试闭环](../assets/social-cards/final-01-ai-test-loop.png)
 
-![真实测试闭环](../assets/social-cards/02-real-chain.png)
+![两套真实测试与数据记录](../assets/social-cards/final-02-real-results.png)
 
-![芯片参数扫描实测](../assets/social-cards/03-chip-scan.png)
-
-![信号源与示波器联动实测](../assets/social-cards/04-waveform-demo.png)
-
-![安全状态机](../assets/social-cards/05-safety.png)
-
-![开源交付](../assets/social-cards/10-open-source.png)
-
-## 理论配图
-
-![理论设备生态](../assets/social-cards/06-ecosystem.png)
-
-![分布式实验室架构](../assets/social-cards/07-distributed.png)
-
-![本地大模型技术路线](../assets/social-cards/08-local-llm.png)
-
-![能力与物理边界](../assets/social-cards/09-boundary.png)
-
-![开源交付](../assets/social-cards/10-open-source.png)
+![可扩展测试生态与开源交付](../assets/social-cards/final-03-scale-and-open.png)
