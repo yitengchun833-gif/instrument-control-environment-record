@@ -1,0 +1,8 @@
+# Local crawler cache may contain full third-party page snapshots.
+research/**/.firecrawl/
+
+# Operating-system and editor artifacts.
+Thumbs.db
+.DS_Store
+*.tmp
+*.bak

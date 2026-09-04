@@ -1,0 +1,137 @@
+**NI-VISA 不是完全开源的。** 它是 **National Instruments（NI，现 Emerson 的测试测量业务）开发的商业 VISA 实现**，属于闭源驱动。([维基百科][1])
+
+简单理解：
+
+```
+你的Python程序
+        ↓
+PyVISA（开源）
+        ↓
+NI-VISA（闭源驱动）
+        ↓
+Windows底层通信
+        ↓
+示波器/源表
+```
+
+### NI-VISA 是什么？
+
+NI-VISA 全称：
+
+> National Instruments Virtual Instrument Software Architecture
+
+它不是编程语言，也不是测试软件，而是一个**仪器通信驱动层**。([维基百科][2])
+
+它负责处理：
+
+* USB仪器通信
+* LAN/LXI通信
+* GPIB通信
+* RS232串口通信
+* PXI/VXI等测试总线
+
+让不同厂家的仪器可以用统一方式控制。([维基百科][2])
+
+---
+
+### 谁创造的？
+
+NI-VISA 是由 **National Instruments（NI）** 推广和实现的。
+
+但要注意：
+
+VISA标准本身不是某一家公司的私有协议，而是测试测量行业标准，多家厂商支持，包括：
+
+* NI
+* Keysight
+* Tektronix
+* Rohde & Schwarz
+* Rigol 等
+
+([维基百科][2])
+
+---
+
+### 为什么 PyVISA 需要 NI-VISA？
+
+因为 PyVISA 本身不会直接控制网卡、USB、GPIB。
+
+例如：
+
+```python
+scope.write(":RUN")
+```
+
+PyVISA 接收到这个命令后，需要调用底层 VISA：
+
+```
+PyVISA
+ ↓
+visa32.dll（Windows）
+ ↓
+NI-VISA
+ ↓
+TCP/IP
+ ↓
+示波器
+```
+
+NI-VISA 就像“硬件驱动”。
+
+---
+
+### 有没有完全开源替代？
+
+有：
+
+**PyVISA-py**
+
+结构：
+
+```
+Python
+ ↓
+PyVISA
+ ↓
+PyVISA-py（开源）
+ ↓
+TCP/IP、USB、串口
+ ↓
+仪器
+```
+
+不需要 NI-VISA。
+
+但是实际工业测试中：
+
+* NI-VISA：稳定、兼容性最好
+* PyVISA-py：方便开源开发，但部分复杂接口支持可能弱一些
+
+所以实验室和ATE设备中常见组合：
+
+```
+Python
++
+PyVISA
++
+NI-VISA
++
+SCPI
+```
+
+这个芯片自动测试方案实际上就是典型工业自动化架构。([维基百科][2])
+
+[1]: https://en.wikipedia.org/wiki/National_Instruments?utm_source=chatgpt.com "National Instruments"
+[2]: https://en.wikipedia.org/wiki/Virtual_instrument_software_architecture?utm_source=chatgpt.com "Virtual instrument software architecture"
+
+
+AI的大脑 → Python的手 → PyVISA的通信 → SCPI语言 → 示波器
+
+对应关系：
+
+部分	作用
+Codex/GPT	理解需求、制定步骤
+Python	执行流程、处理数据、调用库
+PyVISA	负责电脑和仪器通信
+SCPI	示波器能听懂的命令
+MSO5354	实际测量和执行

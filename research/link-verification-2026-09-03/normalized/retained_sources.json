@@ -1,0 +1,118 @@
+{
+  "checked_at": "2026-09-03",
+  "scope": "Three-instrument communication environment only; no chip model, PCB, or EasyEDA data",
+  "sources": [
+    {
+      "topic": "NI-VISA download",
+      "url": "https://www.ni.com/en/support/downloads/drivers/download.ni-visa.html",
+      "publisher": "NI",
+      "status": "retained",
+      "note": "Official dynamic download page; version and OS compatibility must be rechecked at install time."
+    },
+    {
+      "topic": "NI-VISA manual",
+      "url": "https://www.ni.com/docs/en-US/bundle/ni-visa/page/user-manual-welcome.html",
+      "publisher": "NI",
+      "status": "retained"
+    },
+    {
+      "topic": "DP800 programming guide",
+      "url": "https://beyondmeasure.rigoltech.com/acton/attachment/1579/f-03a1/1/-/-/-/-/DP800%20Programming%20Guide.pdf",
+      "publisher": "RIGOL",
+      "status": "retained",
+      "note": "Supports USB DEVICE cabling, UltraSigma discovery and USBTMC/VISA behavior."
+    },
+    {
+      "topic": "RIGOL downloads",
+      "url": "https://www.rigolna.com/support/downloads/",
+      "publisher": "RIGOL",
+      "status": "retained"
+    },
+    {
+      "topic": "RIGOL software",
+      "url": "https://www.rigolna.com/support/software/",
+      "publisher": "RIGOL",
+      "status": "retained"
+    },
+    {
+      "topic": "Keithley 2400 manual landing",
+      "url": "https://www.tek.com/en/keithley-source-measure-units/keithley-smu-2400-series-sourcemeter-manual/series-2400-sourcemeter",
+      "publisher": "Tektronix / Keithley",
+      "status": "retained"
+    },
+    {
+      "topic": "Keithley 2400 user manual PDF",
+      "url": "https://download.tek.com/manual/2400S-900-01_K-Sep2011_User.pdf",
+      "publisher": "Tektronix / Keithley",
+      "status": "retained",
+      "note": "Supports straight-through DB-9, not null modem, and RS-232 settings."
+    },
+    {
+      "topic": "CH340/CH341 Windows driver",
+      "url": "https://www.wch-ic.com/downloads/CH341SER_ZIP.html",
+      "publisher": "WCH",
+      "status": "retained"
+    },
+    {
+      "topic": "Python Windows downloads",
+      "url": "https://www.python.org/downloads/windows/",
+      "publisher": "Python Software Foundation",
+      "status": "retained"
+    },
+    {
+      "topic": "PyVISA",
+      "url": "https://pypi.org/project/PyVISA/",
+      "publisher": "PyPI project metadata",
+      "status": "retained"
+    },
+    {
+      "topic": "PyVISA-py",
+      "url": "https://pypi.org/project/PyVISA-py/",
+      "publisher": "PyPI project metadata",
+      "status": "retained"
+    },
+    {
+      "topic": "pyserial",
+      "url": "https://pypi.org/project/pyserial/",
+      "publisher": "PyPI project metadata",
+      "status": "retained"
+    },
+    {
+      "topic": "PyMeasure",
+      "url": "https://pypi.org/project/PyMeasure/",
+      "publisher": "PyPI project metadata",
+      "status": "retained"
+    },
+    {
+      "topic": "pymso5000",
+      "url": "https://pypi.org/project/pymso5000/",
+      "publisher": "PyPI project metadata",
+      "status": "retained",
+      "note": "0.2.0 exposes the MCP extra and requires Python >=3.14."
+    },
+    {
+      "topic": "pyMSO5000 source",
+      "url": "https://github.com/mabl/pyMSO5000",
+      "publisher": "Upstream GitHub repository",
+      "status": "retained"
+    },
+    {
+      "topic": "PyVISA documentation",
+      "url": "https://pyvisa.readthedocs.io/en/stable/",
+      "publisher": "PyVISA project",
+      "status": "retained"
+    },
+    {
+      "topic": "Codex MCP",
+      "url": "https://developers.openai.com/codex/mcp",
+      "publisher": "OpenAI",
+      "status": "retained"
+    },
+    {
+      "topic": "Codex config reference",
+      "url": "https://developers.openai.com/codex/config-reference",
+      "publisher": "OpenAI",
+      "status": "retained"
+    }
+  ]
+}

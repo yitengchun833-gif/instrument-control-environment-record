@@ -1,0 +1,22 @@
+{
+  "run_id": "instrument-links-2026-09-03",
+  "objective": "Verify primary download, documentation, package, and MCP links needed to reproduce the Windows instrument communication environment for RIGOL MSO5354, Keithley 2400, and RIGOL DP831.",
+  "record_kind": "technical_source",
+  "queries": [
+    "NI-VISA Windows download official",
+    "RIGOL DP800 programming guide official",
+    "RIGOL MSO5000 programming guide official",
+    "Keithley 2400 manual official",
+    "PyVISA PyVISA-py pyserial PyMeasure official",
+    "pymso5000 MCP official repository"
+  ],
+  "sources": [
+    {"name": "official-vendor-sites", "type": "primary_documentation", "primary_tool": "firecrawl", "max_pages": 20},
+    {"name": "anysearch-discovery", "type": "web_discovery", "primary_tool": "anysearch", "max_pages": 10},
+    {"name": "agent-reach-discovery", "type": "web_discovery", "primary_tool": "agent-reach", "max_pages": 10},
+    {"name": "firecrawl-search-discovery", "type": "web_discovery", "primary_tool": "firecrawl-search", "max_pages": 10}
+  ],
+  "required_fields": ["title", "source_url", "publisher", "retrieved_at", "supports"],
+  "fallback_policy": "compatible_only",
+  "limits": {"max_records": 60, "delay_seconds": 2, "concurrency": 1}
+}

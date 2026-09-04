@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "storage": {
+    "run_root": "./research/link-verification-2026-09-03",
+    "retain_raw": true,
+    "raw_retention_days": 30
+  },
+  "limits": {
+    "default_delay_seconds": 2,
+    "max_pages_per_source": 20,
+    "max_records_per_run": 60,
+    "max_concurrent_requests": 1,
+    "max_concurrent_searches": 3
+  },
+  "compliance": {
+    "public_data_only": true,
+    "do_not_bypass_access_controls": true,
+    "do_not_collect_personal_contact_details": true,
+    "honor_opt_out_and_terms": true,
+    "require_source_url": true
+  },
+  "routing": {
+    "allow_fallback": true,
+    "discovery_ensemble": ["anysearch", "agent-reach", "firecrawl-search"],
+    "fallback_order": ["agent-reach", "firecrawl"],
+    "social_deep_collection": "not_applicable"
+  },
+  "quality": {
+    "minimum_publish_date_confidence": 0.4,
+    "minimum_quality_score": 0.55,
+    "prefer_primary_sources": true
+  }
+}

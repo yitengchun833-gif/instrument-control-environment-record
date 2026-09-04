@@ -1,0 +1,7 @@
+# 2026-09-03 本机盘点并用于复现的版本基线。
+# pymso5000 0.2.0 要求 Python >= 3.14。
+pyvisa==1.16.2
+pyvisa-py==0.8.1
+pyserial==3.5
+pymeasure==0.16.0
+pymso5000[mcp]==0.2.0
